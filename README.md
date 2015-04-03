@@ -1,4 +1,4 @@
-# ArduinoHeatedSeatController-Hardware
+# Arduino Heated Seat Controller - Hardware
 # Eagle CAD files for the Arduino Powered Heated Seat Controller
   By: [Luis E Alvarado](mailto:admin@avnet.ws)
   
