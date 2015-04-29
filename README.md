@@ -9,3 +9,6 @@
 	To drive a ComfortHeat "Automotive Carbon Fiber Seat Heaters"
   	by Rostra with the stock control panel of a vehicle, in my case, a 2011 Suzuki Kizashi
   [Rostra Kit: 250-1872 - Universal Kit, Double thumb-dial Switch](http://www.rostra.com/manuals/250-1870_Form5261.pdf)
+
+# Releases:
+  [rev2:](https://github.com/avluis/ArduinoHeatedSeatController-Hardware/releases/tag/rev2)
