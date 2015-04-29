@@ -11,4 +11,4 @@
   [Rostra Kit: 250-1872 - Universal Kit, Double thumb-dial Switch](http://www.rostra.com/manuals/250-1870_Form5261.pdf)
 
 # Releases:
-  [rev2: Revision 2](https://github.com/avluis/ArduinoHeatedSeatController-Hardware/releases/tag/rev2)
+  [(rev2) Revision 2 Board](https://github.com/avluis/ArduinoHeatedSeatController-Hardware/releases/tag/rev2)
