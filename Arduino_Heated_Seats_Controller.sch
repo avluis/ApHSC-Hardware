@@ -15548,6 +15548,28 @@ http://dangerousprototypes.com</description>
 <text x="-3.556" y="-0.762" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="-5.588" y="-3.556" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="PAD_ROUND_4.1MM">
+<description>Round pad 4.1mm hole 8mm pad diameter</description>
+<pad name="P" x="0" y="0" drill="4.1" diameter="8" thermals="no"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.81" y="-6.35" size="1.27" layer="26" ratio="10" rot="MR0">&gt;NAME</text>
+</package>
+<package name="CON_PAD_ROUND_1.02MM">
+<description>Round pad 1.02 mm drill 1.81 mm pad diameter</description>
+<pad name="P" x="0" y="0" drill="1.02" diameter="1.81" thermals="no"/>
+</package>
+<package name="CON_PAD_SQUARE_1.02MM">
+<description>Square pad 1.02 mm drill 1.81 mm pad diameter</description>
+<pad name="P" x="0" y="0" drill="1.02" diameter="1.81" shape="square" thermals="no"/>
+</package>
+<package name="CON_PAD_ROUND_32MIL">
+<description>Round pad 0.81 mm (32 mil) drill 1.52 mm (60 mil) pad diameter</description>
+<pad name="P" x="0" y="0" drill="0.8128" diameter="1.524" thermals="no"/>
+</package>
+<package name="CON_PAD_SQUARE_32MIL">
+<description>Square pad 0.81 mm (32 mil) drill 1.52 mm (60 mil) pad diameter</description>
+<pad name="P" x="0" y="0" drill="0.8128" diameter="1.524" shape="square" thermals="no" first="yes"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_TD62783">
@@ -15731,6 +15753,10 @@ http://dangerousprototypes.com</description>
 <pin name="IN8" x="-12.7" y="-15.24" visible="pad" length="short" direction="in"/>
 <pin name="OUT8" x="15.24" y="-15.24" visible="pad" length="short" direction="out" rot="R180"/>
 </symbol>
+<symbol name="TERMINAL">
+<text x="-2.54" y="0.635" size="1.778" layer="95" font="vector" ratio="12">&gt;NAME</text>
+<pin name="P" x="0" y="-2.54" visible="off" length="short" direction="pas" function="dot" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IC_TD62783" prefix="IC">
@@ -15761,6 +15787,54 @@ http://dangerousprototypes.com</description>
 <connect gate="IC" pin="OUT7" pad="12"/>
 <connect gate="IC" pin="OUT8" pad="11"/>
 <connect gate="IC" pin="VS" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAD_TERMINAL" prefix="T">
+<description>Terminal connection pad</description>
+<gates>
+<gate name="T" symbol="TERMINAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-4.1MMROUND" package="PAD_ROUND_4.1MM">
+<connects>
+<connect gate="T" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.02MM_ROUND" package="CON_PAD_ROUND_1.02MM">
+<connects>
+<connect gate="T" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.02MM_SQUARE" package="CON_PAD_SQUARE_1.02MM">
+<connects>
+<connect gate="T" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-32MIL_ROUND" package="CON_PAD_ROUND_32MIL">
+<connects>
+<connect gate="T" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-32MIL_SQUARE" package="CON_PAD_SQUARE_32MIL">
+<connects>
+<connect gate="T" pin="P" pad="P"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15930,7 +16004,7 @@ at 30/07/2012 17:45:58</description>
 <part name="XTAL" library="murata-filter" deviceset="CSTCE_V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="PWR-LED" library="led" deviceset="LED" device="CHIP-LED0603"/>
+<part name="PWR" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="VDD" device=""/>
@@ -15947,6 +16021,8 @@ at 30/07/2012 17:45:58</description>
 <part name="U4" library="dp_devices" deviceset="IC_TD62783" device="-SO-18W"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="U3" library="Texas Instruments_By_element14_Batch_1" deviceset="ULN2003ADE4" device=""/>
+<part name="RXI" library="dp_devices" deviceset="PAD_TERMINAL" device="-1.02MM_SQUARE"/>
+<part name="TXO" library="dp_devices" deviceset="PAD_TERMINAL" device="-1.02MM_SQUARE"/>
 </parts>
 <sheets>
 <sheet>
@@ -15970,7 +16046,7 @@ at 30/07/2012 17:45:58</description>
 <instance part="SUPPLY5" gate="GND" x="38.1" y="55.88"/>
 <instance part="SUPPLY6" gate="G$1" x="25.4" y="53.34"/>
 <instance part="R6" gate="G$1" x="111.76" y="68.58"/>
-<instance part="R7" gate="G$1" x="116.84" y="63.5"/>
+<instance part="R7" gate="G$1" x="111.76" y="58.42" rot="R270"/>
 <instance part="C4" gate="G$1" x="20.32" y="93.98" rot="R270"/>
 <instance part="SUPPLY7" gate="GND" x="12.7" y="91.44"/>
 <instance part="SUPPLY8" gate="GND" x="30.48" y="86.36"/>
@@ -15983,7 +16059,7 @@ at 30/07/2012 17:45:58</description>
 </instance>
 <instance part="C1" gate="G$1" x="43.18" y="134.62"/>
 <instance part="SUPPLY13" gate="GND" x="43.18" y="127"/>
-<instance part="PWR-LED" gate="G$1" x="78.74" y="17.78" rot="R90"/>
+<instance part="PWR" gate="G$1" x="78.74" y="17.78" rot="R90"/>
 <instance part="R8" gate="G$1" x="66.04" y="17.78"/>
 <instance part="SUPPLY14" gate="GND" x="88.9" y="15.24"/>
 <instance part="SUPPLY15" gate="G$1" x="58.42" y="20.32"/>
@@ -16000,6 +16076,8 @@ at 30/07/2012 17:45:58</description>
 <instance part="U4" gate="IC" x="154.94" y="30.48"/>
 <instance part="SUPPLY20" gate="GND" x="177.8" y="2.54"/>
 <instance part="U3" gate="A" x="157.48" y="83.82"/>
+<instance part="RXI" gate="T" x="119.38" y="71.12"/>
+<instance part="TXO" gate="T" x="119.38" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -16080,7 +16158,7 @@ at 30/07/2012 17:45:58</description>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PWR-LED" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
 <wire x1="83.82" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
 </segment>
@@ -16544,15 +16622,17 @@ at 30/07/2012 17:45:58</description>
 <net name="RXI" class="0">
 <segment>
 <wire x1="116.84" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
-<label x="119.38" y="68.58" size="1.778" layer="95"/>
+<label x="119.38" y="66.04" size="1.778" layer="95"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="RXI" gate="T" pin="P"/>
 </segment>
 </net>
 <net name="TXO" class="0">
 <segment>
-<wire x1="121.92" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<label x="124.46" y="63.5" size="1.778" layer="95"/>
+<wire x1="111.76" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
+<label x="114.3" y="50.8" size="1.778" layer="95"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="TXO" gate="T" pin="P"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16679,7 +16759,7 @@ at 30/07/2012 17:45:58</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="PWR-LED" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
 </segment>
