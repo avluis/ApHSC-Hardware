@@ -10011,6 +10011,10 @@ at 30/07/2012 17:45:58</description>
 <wire x1="45.72" y1="88.9" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
+<junction x="43.18" y="88.9"/>
+<wire x1="40.64" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<label x="38.1" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="ISP" gate="1" pin="5"/>
@@ -10135,16 +10139,33 @@ at 30/07/2012 17:45:58</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,1,146.05,37.084,U4,IN7,,,,"/>
+<approved hash="104,1,45.72,53.34,U1,VCC,VDD,,,"/>
+<approved hash="104,1,45.72,50.8,U1,VCC,VDD,,,"/>
+<approved hash="104,1,45.72,78.74,U1,AVCC,VDD,,,"/>
+<approved hash="202,1,142.24,20.32,U4,IN7,,,,"/>
+<approved hash="104,1,142.24,10.16,U4,VS,VIN,,,"/>
 <approved hash="202,1,139.7,83.82,U3,4B,,,,"/>
-<approved hash="209,1,58.42,132.08,EN,,,,,"/>
-<approved hash="208,1,43.18,99.06,VDD,sup,,,,"/>
-<approved hash="208,1,22.86,81.28,VDD,sup,,,,"/>
-<approved hash="208,1,25.4,50.8,VDD,sup,,,,"/>
-<approved hash="208,1,78.74,137.16,VDD,out,,,,"/>
-<approved hash="208,1,83.82,137.16,VDD,sup,,,,"/>
-<approved hash="208,1,58.42,17.78,VDD,sup,,,,"/>
-<approved hash="208,1,129.54,20.32,VDD,sup,,,,"/>
+<approved hash="206,1,78.74,132.08,GND,,,,,"/>
+<approved hash="206,1,78.74,129.54,GND,,,,,"/>
+<approved hash="208,1,139.7,66.04,GND,sup,,,,"/>
+<approved hash="208,1,203.2,55.88,GND,sup,,,,"/>
+<approved hash="208,1,154.94,111.76,GND,sup,,,,"/>
+<approved hash="208,1,12.7,81.28,GND,sup,,,,"/>
+<approved hash="208,1,38.1,58.42,GND,sup,,,,"/>
+<approved hash="208,1,12.7,93.98,GND,sup,,,,"/>
+<approved hash="208,1,30.48,88.9,GND,sup,,,,"/>
+<approved hash="208,1,20.32,68.58,GND,sup,,,,"/>
+<approved hash="208,1,88.9,15.24,GND,sup,,,,"/>
+<approved hash="208,1,116.84,101.6,GND,sup,,,,"/>
+<approved hash="208,1,177.8,5.08,GND,sup,,,,"/>
+<approved hash="208,1,78.74,132.08,GND,out,,,,"/>
+<approved hash="208,1,78.74,129.54,GND,out,,,,"/>
+<approved hash="208,1,78.74,106.68,GND,sup,,,,"/>
+<approved hash="113,1,136.483,118.305,PWR/H,,,,,"/>
+<approved hash="113,1,211.497,78.5453,LED-OUT,,,,,"/>
+<approved hash="113,1,211.497,35.3653,H-OUT,,,,,"/>
+<approved hash="113,1,80.01,15.5617,PWR,,,,,"/>
+<approved hash="113,1,104.14,102.675,ISP,,,,,"/>
 </errors>
 </schematic>
 </drawing>
