@@ -9462,8 +9462,6 @@ at 30/07/2012 17:45:58</description>
 <part name="PWR/H" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="LED-OUT" library="SparkFun-Connectors" deviceset="M06" device="SIP"/>
 <part name="H-OUT" library="SparkFun-Connectors" deviceset="M06" device="SIP"/>
-<part name="LED-TEST" library="SparkFun-Connectors" deviceset="M02" device="PTH" value=""/>
-<part name="BTN-TEST" library="SparkFun-Connectors" deviceset="M02" device="PTH" value=""/>
 <part name="U1" library="atmel" deviceset="MEGA8" device="-AI"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
@@ -9488,7 +9486,6 @@ at 30/07/2012 17:45:58</description>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="15k"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="15k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
@@ -9509,8 +9506,6 @@ at 30/07/2012 17:45:58</description>
 <instance part="PWR/H" gate="G$1" x="132.08" y="116.84"/>
 <instance part="LED-OUT" gate="G$1" x="213.36" y="81.28" rot="R180"/>
 <instance part="H-OUT" gate="G$1" x="213.36" y="38.1" rot="R180"/>
-<instance part="LED-TEST" gate="G$1" x="215.9" y="60.96" rot="R180"/>
-<instance part="BTN-TEST" gate="G$1" x="215.9" y="101.6" rot="R180"/>
 <instance part="U1" gate="G$1" x="68.58" y="63.5"/>
 <instance part="SUPPLY1" gate="GND" x="20.32" y="66.04"/>
 <instance part="R5" gate="G$1" x="43.18" y="93.98" rot="R270"/>
@@ -9534,8 +9529,7 @@ at 30/07/2012 17:45:58</description>
 <instance part="SUPPLY11" gate="G$1" x="114.3" y="109.22"/>
 <instance part="SUPPLY16" gate="GND" x="116.84" y="99.06"/>
 <instance part="SUPPLY12" gate="GND" x="154.94" y="109.22"/>
-<instance part="SUPPLY17" gate="GND" x="139.7" y="63.5"/>
-<instance part="SUPPLY19" gate="GND" x="203.2" y="53.34"/>
+<instance part="SUPPLY17" gate="GND" x="132.08" y="63.754"/>
 <instance part="R1" gate="G$1" x="157.48" y="132.08"/>
 <instance part="R2" gate="G$1" x="167.64" y="134.62"/>
 <instance part="R3" gate="G$1" x="175.26" y="124.46" rot="R270"/>
@@ -9551,17 +9545,6 @@ at 30/07/2012 17:45:58</description>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<pinref part="U3" gate="A" pin="COM"/>
-<wire x1="139.7" y1="68.58" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED-TEST" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="58.42" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
-</segment>
 <segment>
 <wire x1="154.94" y1="111.76" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
@@ -9643,6 +9626,13 @@ at 30/07/2012 17:45:58</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="27.94" y="114.3"/>
 </segment>
+<segment>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+<wire x1="132.08" y1="66.294" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="E"/>
+<wire x1="139.7" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="68.58" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="D2" class="0">
 <segment>
@@ -9653,11 +9643,6 @@ at 30/07/2012 17:45:58</description>
 <label x="187.96" y="132.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="BTN-TEST" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="101.6" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
-<label x="205.74" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
@@ -9674,11 +9659,6 @@ at 30/07/2012 17:45:58</description>
 <label x="187.96" y="134.62" size="1.27" layer="95" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="BTN-TEST" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="99.06" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
-<label x="205.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
@@ -9963,18 +9943,6 @@ at 30/07/2012 17:45:58</description>
 <wire x1="175.26" y1="91.44" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 <label x="180.34" y="91.44" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="A" pin="1C"/>
-</segment>
-</net>
-<net name="L-TEST" class="0">
-<segment>
-<wire x1="139.7" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
-<label x="134.62" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U3" gate="A" pin="E"/>
-</segment>
-<segment>
-<pinref part="LED-TEST" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="60.96" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="205.74" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D6" class="0">
