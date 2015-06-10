@@ -175,7 +175,7 @@ rev. 4</text>
 <text x="4.445" y="1.27" size="0.6096" layer="21">https://github.com/avluis/ArduinoHeatedSeatController-Hardware</text>
 <hole x="1.27" y="1.27" drill="0.9"/>
 <hole x="1.27" y="34.29" drill="0.9"/>
-<hole x="6.2865" y="32.9565" drill="0.9"/>
+<hole x="32.9565" y="16.4465" drill="0.9"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
