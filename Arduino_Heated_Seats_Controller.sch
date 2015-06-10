@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10115,8 +10115,6 @@ at 30/07/2012 17:45:58</description>
 <approved hash="202,1,139.7,83.82,U3,4B,,,,"/>
 <approved hash="206,1,78.74,132.08,GND,,,,,"/>
 <approved hash="206,1,78.74,129.54,GND,,,,,"/>
-<approved hash="208,1,139.7,66.04,GND,sup,,,,"/>
-<approved hash="208,1,203.2,55.88,GND,sup,,,,"/>
 <approved hash="208,1,154.94,111.76,GND,sup,,,,"/>
 <approved hash="208,1,12.7,81.28,GND,sup,,,,"/>
 <approved hash="208,1,38.1,58.42,GND,sup,,,,"/>
@@ -10129,6 +10127,7 @@ at 30/07/2012 17:45:58</description>
 <approved hash="208,1,78.74,132.08,GND,out,,,,"/>
 <approved hash="208,1,78.74,129.54,GND,out,,,,"/>
 <approved hash="208,1,78.74,106.68,GND,sup,,,,"/>
+<approved hash="208,1,132.08,66.294,GND,sup,,,,"/>
 <approved hash="113,1,136.483,118.305,PWR/H,,,,,"/>
 <approved hash="113,1,211.497,78.5453,LED-OUT,,,,,"/>
 <approved hash="113,1,211.497,35.3653,H-OUT,,,,,"/>
