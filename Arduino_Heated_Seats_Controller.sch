@@ -9496,6 +9496,7 @@ at 30/07/2012 17:45:58</description>
 <part name="U2" library="Texas Instruments_By_element14_Batch_1" deviceset="UA78M05CDCY" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9540,6 +9541,7 @@ at 30/07/2012 17:45:58</description>
 <instance part="U2" gate="A" x="58.42" y="134.62"/>
 <instance part="SUPPLY9" gate="GND" x="78.74" y="104.14"/>
 <instance part="C2" gate="G$1" x="27.94" y="119.38"/>
+<instance part="SUPPLY13" gate="GND" x="124.46" y="2.794"/>
 </instances>
 <busses>
 </busses>
@@ -9632,6 +9634,12 @@ at 30/07/2012 17:45:58</description>
 <pinref part="U3" gate="A" pin="E"/>
 <wire x1="139.7" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="66.04" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U4" gate="IC" pin="IN7"/>
+<wire x1="142.24" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="20.32" x2="124.46" y2="5.334" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="D2" class="0">
