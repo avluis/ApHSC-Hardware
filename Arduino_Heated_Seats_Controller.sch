@@ -9529,7 +9529,7 @@ at 30/07/2012 17:45:58</description>
 <instance part="SUPPLY11" gate="G$1" x="114.3" y="109.22"/>
 <instance part="SUPPLY16" gate="GND" x="116.84" y="99.06"/>
 <instance part="SUPPLY12" gate="GND" x="154.94" y="109.22"/>
-<instance part="SUPPLY17" gate="GND" x="132.08" y="63.754"/>
+<instance part="SUPPLY17" gate="GND" x="129.54" y="63.754"/>
 <instance part="R1" gate="G$1" x="157.48" y="132.08"/>
 <instance part="R2" gate="G$1" x="167.64" y="134.62"/>
 <instance part="R3" gate="G$1" x="175.26" y="124.46" rot="R270"/>
@@ -9628,10 +9628,10 @@ at 30/07/2012 17:45:58</description>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="132.08" y1="66.294" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="66.294" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="E"/>
-<wire x1="139.7" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="68.58" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="66.04" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -9702,6 +9702,12 @@ at 30/07/2012 17:45:58</description>
 <wire x1="33.02" y1="139.7" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="139.7" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
 <junction x="33.02" y="139.7"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="COM"/>
+<wire x1="137.16" y1="68.58" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="68.58" x2="135.89" y2="68.58" width="0.1524" layer="91"/>
+<label x="135.89" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D4" class="0">
