@@ -12,6 +12,7 @@
 
 # Releases:
   [(rev2) Revision 2 Board](https://github.com/avluis/ArduinoHeatedSeatController-Hardware/releases/tag/rev2)
+  [(rev4) Revision 4 Board](https://github.com/avluis/ArduinoHeatedSeatController-Hardware/releases/tag/rev4)
 
 # Screenshots:
   ![Rev 4 - Front](/../screenshots/ArduinoHeatedSeatController_rev4-front.jpg?raw=true "Rev 4 - Front")
