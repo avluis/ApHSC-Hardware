@@ -9228,7 +9228,7 @@ http://dangerousprototypes.com</description>
 <devices>
 <device name="-SO-18W" package="SO-18L">
 <connects>
-<connect gate="IC" pin="GND" pad="9"/>
+<connect gate="IC" pin="GND" pad="10"/>
 <connect gate="IC" pin="IN1" pad="1"/>
 <connect gate="IC" pin="IN2" pad="2"/>
 <connect gate="IC" pin="IN3" pad="3"/>
@@ -9245,7 +9245,7 @@ http://dangerousprototypes.com</description>
 <connect gate="IC" pin="OUT6" pad="13"/>
 <connect gate="IC" pin="OUT7" pad="12"/>
 <connect gate="IC" pin="OUT8" pad="11"/>
-<connect gate="IC" pin="VS" pad="10"/>
+<connect gate="IC" pin="VS" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
