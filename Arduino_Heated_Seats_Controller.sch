@@ -9652,21 +9652,10 @@ at 27/07/2012 14:02:49</description>
 </net>
 <net name="D2" class="0">
 <segment>
-<wire x1="175.26" y1="129.54" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
-<junction x="175.26" y="132.08"/>
-<label x="187.96" y="132.08" size="1.27" layer="95" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="PD2"/>
 <wire x1="86.36" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <label x="93.98" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="D3" class="0">
 <segment>
 <wire x1="180.34" y1="121.92" x2="180.34" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
@@ -9676,21 +9665,24 @@ at 27/07/2012 14:02:49</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
+</net>
+<net name="D3" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PD3"/>
 <wire x1="86.36" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
 <label x="93.98" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="D-BTN" class="0">
 <segment>
-<wire x1="152.4" y1="132.08" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="BTN-IN" gate="G$1" pin="1"/>
-<label x="144.78" y="132.08" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="129.54" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<junction x="175.26" y="132.08"/>
+<label x="187.96" y="132.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="P-BTN" class="0">
+<net name="D-BTN" class="0">
 <segment>
 <pinref part="BTN-IN" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="134.62" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
@@ -10122,6 +10114,14 @@ at 27/07/2012 14:02:49</description>
 <pinref part="PWR" gate="G$1" pin="A"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="82.55" y1="5.08" x2="87.63" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="P-BTN" class="0">
+<segment>
+<wire x1="152.4" y1="132.08" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="BTN-IN" gate="G$1" pin="1"/>
+<label x="144.78" y="132.08" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
