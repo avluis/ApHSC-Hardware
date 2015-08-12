@@ -1,26 +1,26 @@
-Partlist exported from /Users/avluis/git/ArduinoHeatedSeatController-Hardware/Arduino_Heated_Seats_Controller.sch at 5/25/15 18:21
+Partlist exported from /Users/avluis/git/ArduinoHeatedSeatController-Hardware/Arduino_Heated_Seats_Controller.sch at 8/12/15 17:07
 
-Part     Value             Device            Package             Description                          
-BTN-IN                     M02PTH            1X02                Standard 2-pin 0.1" header. Use with 
-BTN-TEST                   M02PTH            1X02                Standard 2-pin 0.1" header. Use with 
-C1       0.33uF            C-USC0603         C0603               CAPACITOR, American symbol           
-C2       0.1uF             C-USC0603         C0603               CAPACITOR, American symbol           
-C3       0.1uF             C-USC0603         C0603               CAPACITOR, American symbol           
-C4       0.1uF             C-USC0603         C0603               CAPACITOR, American symbol           
-H-OUT                      M06SIP            1X06                Header 6                             
-ISP                        MA03-2            MA03-2              PIN HEADER                           
-LED-OUT                    M06SIP            1X06                Header 6                             
-LED-TEST                   M02PTH            1X02                Standard 2-pin 0.1" header. Use with 
-PWR                        LEDCHIP-LED0603   CHIP-LED0603        LED                                  
-PWR/H                      M03PTH            1X03                Header 3                             
-R1       15k               R-US_R0603        R0603               RESISTOR, American symbol            
-R2       15k               R-US_R0603        R0603               RESISTOR, American symbol            
-R3       10k               R-US_R0603        R0603               RESISTOR, American symbol            
-R4       10k               R-US_R0603        R0603               RESISTOR, American symbol            
-R5       10k               R-US_R0603        R0603               RESISTOR, American symbol            
-R8       1k                R-US_R0603        R0603               RESISTOR, American symbol            
-U1       MEGA8-AI          MEGA8-AI          TQFP32-08           MICROCONTROLLER                      
-U2       UA78M05CDCY       UA78M05CDCY       SOT230P700X180-4N   IC, LINEAR VOLT REGULATOR, 5V        
-U3       ULN2003ADE4       ULN2003ADE4       SOIC127P600X175-16N DARLINGTON TRANSISTOR ARRAYS         
-U4       IC_TD62783-SO-18W IC_TD62783-SO-18W SO-18L              8 Channel High voltage Source driver 
-XTAL     CSTCE_V           CSTCE_V           CSTCE_V                                                  
+Part    Value         Device          Package               Description                                             
+BTN-IN                M02PTH          1X02                  Standard 2-pin 0.1" header. Use with                    
+C1      0.33uF        C-USC0603       C0603                 CAPACITOR, American symbol                              
+C2      0.1uF         C-USC0603       C0603                 CAPACITOR, American symbol                              
+C3      0.1uF         C-USC0603       C0603                 CAPACITOR, American symbol                              
+C4      0.1uF         C-USC0603       C0603                 CAPACITOR, American symbol                              
+H-OUT                 M06SIP          1X06                  Header 6                                                
+ISP                   MA03-2          MA03-2                PIN HEADER                                              
+L                     LEDCHIP-LED0603 CHIP-LED0603          LED                                                     
+LED-OUT               M06SIP          1X06                  Header 6                                                
+ON                    LEDCHIP-LED0603 CHIP-LED0603          LED                                                     
+PWR/H                 M03PTH          1X03                  Header 3                                                
+R1      15K           R-US_R0603      R0603                 RESISTOR, American symbol                               
+R2      15K           R-US_R0603      R0603                 RESISTOR, American symbol                               
+R3      10K           R-US_R0603      R0603                 RESISTOR, American symbol                               
+R4      10K           R-US_R0603      R0603                 RESISTOR, American symbol                               
+R5      10K           R-US_R0603      R0603                 RESISTOR, American symbol                               
+R6      1K            R-US_R0603      R0603                 RESISTOR, American symbol                               
+R7      1K            R-US_R0603      R0603                 RESISTOR, American symbol                               
+U1      ATMEGA328P-AU ATMEGA328P-AU   QFP80P900X900X120-32N 8-bit Microcontroller with In-System Programmable Flash 
+U2      UA78M05       UA78M05         SOT223                μA78Mxx Positive-Voltage Regulators                     
+U3      TPL7407L      TPL7407L        SOIC16N               40V 7-Channel Low Side Driver                           
+U4      A2982         A2982           SOIC20W               8-Channel Source Driver                                 
+XTAL    CSTCE_V       CSTCE_V         CSTCE_V                                                                       
