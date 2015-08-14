@@ -1,9 +1,9 @@
-# Arduino Heated Seat Controller - Hardware
-# Eagle CAD files for the Arduino Powered Heated Seat Controller
+# ApHSC - Hardware
+# Eagle CAD files for the ApHSC
   By: [Luis E Alvarado](mailto:admin@avnet.ws)
   
-  [Software](https://github.com/avluis/ArduinoHeatedSeatController) | 
-  [Hardware](https://github.com/avluis/ArduinoHeatedSeatController-Hardware)
+  [Software](https://github.com/avluis/ApHSC) | 
+  [Hardware](https://github.com/avluis/ApHSC-Hardware)
   
 # Purpose:
 	To drive a ComfortHeat "Automotive Carbon Fiber Seat Heaters"
